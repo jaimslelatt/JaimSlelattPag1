@@ -55,10 +55,16 @@ body{
     margin-left: 50px;
 }
 
+.navbar0{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px; 
+}
 .navbar{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; 
 }
 
 .Main {
@@ -75,11 +81,13 @@ body{
     width: 460px; 
     height: 460px; 
     margin-bottom: 20px; 
+    margin-left: 20px;
 }
 
 .Texto{
     color: blanchedalmond;
     margin-bottom: 30px;
+    margin-left: 50px;
 }
 
 .superposicion {
@@ -90,6 +98,7 @@ body{
     height: 800px; 
     margin-left: 30px;
     margin-right: 30px;
+    overflow: hidden;
 }
 
 .superposicion2 {
@@ -104,9 +113,11 @@ body{
 
 .superposicion img {
     width: 100%;
-    height: 800px;
+    max-width: 100%;
+    height: 100vh;
     display: block;
     opacity: 0.4;
+    object-fit: cover;
 }
 
 .superposicion2 img {
@@ -133,22 +144,14 @@ body{
     width: 460px; 
     height: 460px; 
     margin-bottom: 20px; 
-}
-
-.Texto2{
-    color: blanchedalmond;
-    margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 .Imagen3 img {
     width: 460px; 
     height: 460px; 
     margin-bottom: 20px; 
-}
-
-.Texto3{
-    color: blanchedalmond;
-    margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 .texto-superpuesto2 {
@@ -202,11 +205,15 @@ body{
     justify-content: space-evenly;
     align-items: left;
 }
+.caja{
+    display: flex;
+}
 
 @media only screen and (max-width: 600px) {
     .texto-superpuesto2 {
         flex-direction: column;
         font-size: 24px;
+        left: 45%;
     }
     .hidden-image{
         display: none;
@@ -216,5 +223,24 @@ body{
     }
     .Costado a{
         margin-left: 20px;
+    }
+    .Texto6{
+        margin-right: 30px;
+        margin-left: 10px;
+    }
+    .superposicion {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .texto-superpuesto{
+        font-size: 30px;
+        left: 48%;
+
+    }
+    .caja{
+        flex-direction: column;
+    }
+    .Texto{
+        margin-left: 100px;
     }
 }
