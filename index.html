@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIFTING CLUB</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -24,15 +25,21 @@
                 <div class="caja">
                     <div class="navbar">
                         <div class="Imagen"><img src="images/Pesos halteres pretos _ Foto Premium.jpeg" alt=""></div> 
-                        <div class="Texto">Mancuernas 20 KG___________$15.000</div> 
+                        <div class="Texto">Mancuernas 20 KG</div> 
+                        <div class="Texto">$15.000</div> 
+                        <button class="boton-agregar" data-nombre="Mancuernas 20 KG" data-precio="15000">Agregar al carrito</button>
                     </div>
                     <div class="navbar">
                         <div class="Imagen"><img src="images/Disco20.jpeg" alt=""></div>
-                        <div class="Texto">Discos 20 KG__________$15.000</div>
+                        <div class="Texto">Discos 20 KG</div>
+                        <div class="Texto">$15.000</div>
+                        <button class="boton-agregar" data-nombre="Discos 20 KG" data-precio="15000">Agregar al carrito</button>
                     </div>
                     <div class="navbar">
                         <div class="Imagen"><img src="images/Barra.jpg" alt=""></div>   
-                        <div class="Texto">Barra Olímpica 20 KG_______$15.000</div>
+                        <div class="Texto">Barra Olímpica 20 KG</div>
+                        <div class="Texto">$15.000</div>
+                        <button class="boton-agregar" data-nombre="Barra Olímpica 20 KG" data-precio="15000">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="superposicion">
@@ -43,23 +50,39 @@
                 <div class="caja">
                     <div class="navbar">
                         <div class="Imagen"><img src="images/Pesos halteres pretos _ Foto Premium.jpeg" alt=""></div> 
-                        <div class="Texto">Mancuernas 20 KG__________$15.000</div> 
+                        <div class="Texto">Mancuernas 20 KG</div> 
+                        <div class="Texto">$15.000</div> 
+                        <button class="boton-agregar" data-nombre="Mancuernas 20 KG" data-precio="15000">Agregar al carrito</button>
                         <div class="Imagen"><img src="images/rusa.jpg" alt=""></div> 
-                        <div class="Texto">Pesa Rusa 12 KG___________$12.000</div> 
+                        <div class="Texto">Pesa Rusa 12 KG</div> 
+                        <div class="Texto">$12.000</div> 
+                        <button class="boton-agregar" data-nombre="Pesa Rusa 12 KG" data-precio="12000">Agregar al carrito</button>
                     </div>
                     <div class="navbar">
                         <div class="Imagen"><img src="images/Disco20.jpeg" alt=""></div>
-                        <div class="Texto">Discos 20 KG__________$15.000</div>
+                        <div class="Texto">Discos 20 KG</div>
+                        <div class="Texto">$15.000</div>
+                        <button class="boton-agregar" data-nombre="Discos 20 KG" data-precio="15000">Agregar al carrito</button>
                         <div class="Imagen"><img src="images/soga para saltar.jpg" alt=""></div>
-                        <div class="Texto">Soga Pro______________$10.000</div>   
+                        <div class="Texto">Soga Pro</div>   
+                        <div class="Texto">$10.000</div>   
+                        <button class="boton-agregar" data-nombre="Soga Pro" data-precio="10000">Agregar al carrito</button>
                     </div>
                     <div class="navbar">
                         <div class="Imagen"><img src="images/Barra.jpg" alt=""></div>   
-                        <div class="Texto">Barra Olímpica 20 KG________$15.000</div>
+                        <div class="Texto">Barra Olímpica 20 KG</div>
+                        <div class="Texto">$15.000</div>
+                        <button class="boton-agregar" data-nombre="Barra Olímpica 20 KG" data-precio="15000">Agregar al carrito</button>
                         <div class="Imagen"><img src="images/Looking dope.jpeg" alt=""></div>   
-                        <div class="Texto">Mancuernas 10 KG__________$8.000</div>
+                        <div class="Texto">Mancuernas 10 KG</div>
+                        <div class="Texto">$8.000</div>
+                        <button class="boton-agregar" data-nombre="Mancuernas 10 KG" data-precio="8000">Agregar al carrito</button>
                     </div>
                 </div>
+                <h2 id="h2">CARRITO DE COMPRAS</h2>
+                <ul id="lista-carrito" class="carrito"></ul>
+                <h2 id="h2">TOTAL: $<span id="total-precio">0.00</span></h2>
+                <button id="realizar-compra">Realizar Compra</button>
                 <div class="superposicion2">
                     <div class="hidden-image">
                         <img src="images/fondo2.jpg" alt="Fondo 2">

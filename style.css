@@ -86,12 +86,12 @@ body{
 
 .Texto{
     color: blanchedalmond;
-    margin-bottom: 30px;
-    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-left: 150px;
 }
 
 .superposicion {
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 50px;
     position: relative;
     width: 100%; 
@@ -193,6 +193,55 @@ body{
 .caja{
     display: flex;
 }
+.boton-agregar{
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+    color: black;
+    font-family: 'Poppins', sans-serif; 
+    padding: 5px 10px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+
+}
+
+.boton-agregar:hover {
+    background-color: #f0e6d2; /* Cambiando el color de fondo al pasar el mouse */
+}
+
+.carrito {
+    background-color: blanchedalmond;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.producto-carrito {
+    margin-bottom: 5px;
+}
+
+.boton-eliminar {
+    background-color: red;
+    color: white; /* Cambiar el color del texto a blanco */
+    border: none; /* Eliminar el borde */
+    padding: 5px 10px; /* Ajustar el espacio alrededor del texto */
+    float: right; /* Alinear a la derecha sin salto de línea */
+}
+
+#realizar-compra {
+    background-color: blanchedalmond;
+    color: black;
+    display: block;
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    margin-top: 20px; /* Agrega un espacio entre el botón y el total */
+    padding: 10px 20px; /* Ajusta el relleno del botón */
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
     .texto-superpuesto2 {
