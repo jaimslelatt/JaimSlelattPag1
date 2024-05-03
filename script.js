@@ -31,16 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (productoExistente !== null) {
-            // Si el producto ya está en el carrito, actualizar la cantidad
             const cantidad = parseInt(productoExistente.dataset.cantidad) + 1;
             productoExistente.dataset.cantidad = cantidad;
             productoExistente.querySelector('span').textContent = `${producto.nombre} - $${producto.precio} (${cantidad})`;
 
-            // Calcular subtotal y mostrarlo
             const subtotal = cantidad * parseFloat(producto.precio);
             productoExistente.querySelector('.subtotal').textContent = `Subtotal: $${subtotal.toFixed(2)}`;
         } else {
-            // Si el producto no está en el carrito, agregarlo como un nuevo elemento
+
             const elementoProducto = document.createElement('li');
             elementoProducto.classList.add('producto-carrito');
             elementoProducto.dataset.nombre = producto.nombre;
@@ -51,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
             textoProducto.textContent = `${producto.nombre} - $${producto.precio} (1)`;
             elementoProducto.appendChild(textoProducto);
 
-            // Agregar botones de suma y resta
             const botonSumar = document.createElement('button');
             botonSumar.textContent = '+';
             botonSumar.classList.add('boton-sumar');
@@ -64,19 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
             botonRestar.addEventListener('click', () => restarCantidad(elementoProducto));
             elementoProducto.appendChild(botonRestar);
 
-            // Espacio entre los botones y el subtotal
             const espacio = document.createElement('span');
             espacio.textContent = ' ';
             elementoProducto.appendChild(espacio);
 
-            // Calcular subtotal y mostrarlo
             const subtotal = parseFloat(producto.precio);
             const subtotalSpan = document.createElement('span');
             subtotalSpan.classList.add('subtotal');
             subtotalSpan.textContent = `Subtotal: $${subtotal.toFixed(2)}`;
             elementoProducto.appendChild(subtotalSpan);
 
-            // Agregar botón de eliminar
             const botonEliminar = document.createElement('button');
             botonEliminar.textContent = 'Eliminar';
             botonEliminar.classList.add('boton-eliminar');
@@ -87,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
             listaCarrito.appendChild(elementoProducto);
         }
 
-        // Actualizar el total
         actualizarTotal();
     }
 
@@ -96,11 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
         elementoProducto.dataset.cantidad = cantidad;
         elementoProducto.querySelector('span').textContent = `${elementoProducto.dataset.nombre} - $${elementoProducto.dataset.precio} (${cantidad})`;
 
-        // Recalcular y actualizar el subtotal
         const subtotal = cantidad * parseFloat(elementoProducto.dataset.precio);
         elementoProducto.querySelector('.subtotal').textContent = `Subtotal: $${subtotal.toFixed(2)}`;
 
-        // Actualizar el total
         actualizarTotal();
     }
 
@@ -112,19 +103,19 @@ document.addEventListener('DOMContentLoaded', () => {
             elementoProducto.dataset.cantidad = cantidad;
             elementoProducto.querySelector('span').textContent = `${elementoProducto.dataset.nombre} - $${elementoProducto.dataset.precio} (${cantidad})`;
 
-            // Recalcular y actualizar el subtotal
+         
             const subtotal = cantidad * parseFloat(elementoProducto.dataset.precio);
             elementoProducto.querySelector('.subtotal').textContent = `Subtotal: $${subtotal.toFixed(2)}`;
         }
 
-        // Actualizar el total
+     
         actualizarTotal();
     }
 
     function eliminarProducto(elementoProducto) {
         elementoProducto.remove();
 
-        // Actualizar el total después de eliminar un producto
+    
         actualizarTotal();
     }
 
@@ -148,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function limpiarCarrito() {
         const listaCarrito = document.getElementById('lista-carrito');
-        listaCarrito.innerHTML = ''; // Borra todos los elementos dentro de lista-carrito
-        actualizarTotal(); // Actualiza el total después de limpiar el carrito
+        listaCarrito.innerHTML = ''; 
+        actualizarTotal(); 
     }
 
     function mostrarAlerta() {

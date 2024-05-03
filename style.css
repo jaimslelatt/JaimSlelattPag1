@@ -206,7 +206,7 @@ body{
 }
 
 .boton-agregar:hover {
-    background-color: #f0e6d2; /* Cambiando el color de fondo al pasar el mouse */
+    background-color: #f0e6d2; 
 }
 
 .carrito {
@@ -224,19 +224,19 @@ body{
 
 .boton-eliminar {
     background-color: red;
-    color: white; /* Cambiar el color del texto a blanco */
-    border: none; /* Eliminar el borde */
-    padding: 5px 10px; /* Ajustar el espacio alrededor del texto */
-    float: right; /* Alinear a la derecha sin salto de línea */
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    float: right; 
 }
 
 #realizar-compra {
     background-color: blanchedalmond;
     color: black;
     display: block;
-    margin: 0 auto; /* Centra el botón horizontalmente */
-    margin-top: 20px; /* Agrega un espacio entre el botón y el total */
-    padding: 10px 20px; /* Ajusta el relleno del botón */
+    margin: 0 auto; 
+    margin-top: 20px; 
+    padding: 10px 20px; 
     border: none;
     cursor: pointer;
     margin-bottom: 20px;
