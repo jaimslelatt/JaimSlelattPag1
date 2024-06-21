@@ -87,13 +87,13 @@ body{
 .Texto{
     color: blanchedalmond;
     margin-bottom: 10px;
-    margin-left: 180px;
+    margin-left: 10px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 19px;
 }
 
 .superposicion {
-    margin-top: 20px;
+    margin-top: 75px;
     margin-bottom: 50px;
     position: relative;
     width: 100%; 
@@ -250,6 +250,47 @@ body{
     margin-top: 100px;
 }
 
+.boton-catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: blanchedalmond;
+    color: black;
+    padding: 15px 30px; 
+    text-decoration: none;
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.button-link:hover {
+    background-color: #f0e6d2; 
+}
+
+.container-fluid{
+    background-color: blanchedalmond;
+  
+  }
+  
+  #navb{
+      padding-top: 0;
+      padding-bottom: 0;
+      position: sticky;
+      width: 100%;
+      top: 0;
+      z-index: 1000;  
+      color: blanchedalmond;
+  }
+  
 @media only screen and (max-width: 600px) {
     .texto-superpuesto2 {
         flex-direction: column;
@@ -259,6 +300,7 @@ body{
         display: none;
     }
     .superposicion2 {
+
         height: 2200px;
     }
     .Costado a{
@@ -281,17 +323,27 @@ body{
         flex-direction: column;
     }
     .Texto{
-        margin-left: 130px;
+        margin-left: 10px;
     }
     .Imagen img{
         margin-left: 0px;
         width: 100%;
+        height: auto;
     }
     .superposicion img{
         width: 100%;
     }
     .superposicion{
+        margin-top: 50px;
         margin-left: 0;
         margin-right: 0;
+    }
+    .boton-catalogo{
+        margin-bottom: 150px;
+    }
+    .Footer{
+        margin-top: 150px;
+        margin-bottom: 0px;
+        padding: 0px;
     }
 }
